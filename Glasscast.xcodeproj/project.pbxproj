@@ -19,9 +19,22 @@
 		156CDC0B2F1E8F5400DA2577 /* Glasscast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glasscast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		156CDC562F1E983C00DA2577 /* Exceptions for "Glasscast" folder in "Glasscast" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 156CDC0A2F1E8F5400DA2577 /* Glasscast */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		156CDC0D2F1E8F5400DA2577 /* Glasscast */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				156CDC562F1E983C00DA2577 /* Exceptions for "Glasscast" folder in "Glasscast" target */,
+			);
 			path = Glasscast;
 			sourceTree = "<group>";
 		};
