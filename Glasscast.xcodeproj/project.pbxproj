@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		156CDC3B2F1E930300DA2577 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 156CDC3A2F1E930300DA2577 /* Auth */; };
+		156CDC3D2F1E930300DA2577 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 156CDC3C2F1E930300DA2577 /* Functions */; };
+		156CDC3F2F1E930300DA2577 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 156CDC3E2F1E930300DA2577 /* PostgREST */; };
+		156CDC412F1E930300DA2577 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 156CDC402F1E930300DA2577 /* Realtime */; };
+		156CDC432F1E930300DA2577 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 156CDC422F1E930300DA2577 /* Storage */; };
+		156CDC542F1E95CA00DA2577 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 156CDC532F1E95CA00DA2577 /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		156CDC0B2F1E8F5400DA2577 /* Glasscast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glasscast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +32,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156CDC3F2F1E930300DA2577 /* PostgREST in Frameworks */,
+				156CDC3D2F1E930300DA2577 /* Functions in Frameworks */,
+				156CDC542F1E95CA00DA2577 /* Supabase in Frameworks */,
+				156CDC3B2F1E930300DA2577 /* Auth in Frameworks */,
+				156CDC432F1E930300DA2577 /* Storage in Frameworks */,
+				156CDC412F1E930300DA2577 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				156CDC0D2F1E8F5400DA2577 /* Glasscast */,
+				156CDC522F1E95CA00DA2577 /* Frameworks */,
 				156CDC0C2F1E8F5400DA2577 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +59,13 @@
 				156CDC0B2F1E8F5400DA2577 /* Glasscast.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		156CDC522F1E95CA00DA2577 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +88,12 @@
 			);
 			name = Glasscast;
 			packageProductDependencies = (
+				156CDC3A2F1E930300DA2577 /* Auth */,
+				156CDC3C2F1E930300DA2577 /* Functions */,
+				156CDC3E2F1E930300DA2577 /* PostgREST */,
+				156CDC402F1E930300DA2577 /* Realtime */,
+				156CDC422F1E930300DA2577 /* Storage */,
+				156CDC532F1E95CA00DA2577 /* Supabase */,
 			);
 			productName = Glasscast;
 			productReference = 156CDC0B2F1E8F5400DA2577 /* Glasscast.app */;
@@ -94,6 +123,9 @@
 			);
 			mainGroup = 156CDC022F1E8F5400DA2577;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				156CDC392F1E930300DA2577 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 156CDC0C2F1E8F5400DA2577 /* Products */;
 			projectDirPath = "";
@@ -254,6 +286,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Glasscast/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -274,13 +307,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Debug;
@@ -298,6 +332,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Glasscast/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -318,13 +353,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Release;
@@ -351,6 +387,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		156CDC392F1E930300DA2577 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		156CDC3A2F1E930300DA2577 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 156CDC392F1E930300DA2577 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		156CDC3C2F1E930300DA2577 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 156CDC392F1E930300DA2577 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		156CDC3E2F1E930300DA2577 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 156CDC392F1E930300DA2577 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		156CDC402F1E930300DA2577 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 156CDC392F1E930300DA2577 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		156CDC422F1E930300DA2577 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 156CDC392F1E930300DA2577 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		156CDC532F1E95CA00DA2577 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 156CDC392F1E930300DA2577 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 156CDC032F1E8F5400DA2577 /* Project object */;
 }
